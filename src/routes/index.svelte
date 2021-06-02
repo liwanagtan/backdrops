@@ -37,7 +37,7 @@
 </svelte:head>
 
 
-<div class="flex flex-col w-[420px] sm:w-[640px] md:w-[960px] mx-auto my-12">
+<div class="flex flex-col w-[420px] sm:w-[640px] lg:w-[960px] mx-auto my-12">
     <h1 class="text-4xl mb-4 text-center">Choose your portrait background</h1>
     <p class="text-2xl mb-12 text-center">You can hover on each background to see a sample of what it will look like</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
