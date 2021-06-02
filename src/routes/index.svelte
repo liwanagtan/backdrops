@@ -40,14 +40,14 @@
 <div class="flex flex-col w-[420px] sm:w-[640px] lg:w-[960px] mx-auto my-12">
     <h1 class="text-4xl mb-4 text-center">Choose your portrait background</h1>
     <p class="text-2xl mb-12 text-center">You can hover on each background to see a sample of what it will look like</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
         {#each backdrops as backdrop}
-            <div class="p-4 bg-gray-700 cursor-pointer group hover:bg-white hover:text-gray-700 font-bolds transform duration-500">
-                <div class="relative max-w-[420px]">
-                    <img src={backdrop.url} alt={backdrops.name} class="">
-                    <img src="images/graduate.png" alt="Graduate" class="hidden group-hover:flex absolute inset-0 transform duration-500">
+            <div class="p-2 pb-4 bg-gray-700 cursor-pointer group hover:p-0 hover:bg-white hover:text-gray-700 font-bolds transform duration-500">
+                <div class="relative">
+                    <img src={backdrop.url} alt={backdrops.name} class="relative">
+                    <img src="images/graduate.png" alt="Graduate" class="hidden group-hover:flex absolute inset-0 transform transition-opacity duration-500 object-cover">
                 </div>
-                <h2 class="text-center mt-12">{backdrop.name}</h2>
+                <h2 class="text-center my-4 font-bold">{backdrop.name}</h2>
             </div>
         {/each}
     </div>
